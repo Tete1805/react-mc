@@ -1,0 +1,95 @@
+.MT {
+  padding: 10px;
+}
+
+.MT-Header {
+  display: flex;
+  padding: 20px 0;
+}
+
+.MT-Header > * {
+  margin: auto;
+}
+
+.MT-Header form {
+  display: block;
+  margin: auto 0;
+  text-align: left;
+}
+
+.MT-Header form > label {
+  padding: 20px 20px 20px 0;
+}
+
+.MT-Header form > input {
+  border: 1px solid #4094da;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.MT-Results {
+  font-size: 90%;
+  color: #888;
+  margin-left: 20px;
+}
+
+.MT-Header-Options {
+  margin-right: 0;
+}
+.MT-Header-Options > div {
+  padding: 10px 0;
+}
+
+.MT-RowCount {
+  cursor: pointer;
+  color: #4094da;
+  margin-left: 10px;
+}
+
+@media screen and (max-width: 1200px) {
+  .MT-Header {
+    display: block;
+  }
+  .MT-Header > * {
+    margin: 10px 0;
+    text-align: left;
+  }
+}
+
+.MT-Pager {
+  margin: 20px;
+}
+
+.MT table {
+  border-collapse: collapse;
+}
+
+.MT table thead {
+  background-color: #999;
+  color: white;
+  cursor: pointer;
+}
+
+.MT table tbody tr:hover {
+  background-color: #eee;
+}
+
+.MT table th,
+.MT table td {
+  border: 1px solid #ccc;
+  padding: 8px 40px;
+}
+
+.MT-sortIcon {
+  position: relative;
+}
+
+.MT-sortIcon::before {
+  content: '▲';
+  left: 20px;
+  position: absolute;
+  transform: rotate(180deg) scale(0.8);
+}
+.MT-sortIcon.MT-sortIcon-reverse::before {
+  transform: scale(0.8);
+}
