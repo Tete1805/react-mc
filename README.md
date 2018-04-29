@@ -21,14 +21,14 @@ NB : This is just a work in progress for now
 
 On top of your component file :
 
-```
+```js
 const mc = require('react-render-props-components');
 const { Filter } = mc;
 ```
 
 Each component basically keeps state and exposes access to it and a modification function.
 
-```
+```JSX
 <Filter>
   ({ setFilter, filterFunction, filter }) => (
     <div>
@@ -39,8 +39,8 @@ Each component basically keeps state and exposes access to it and a modification
 </Filter>
 ```
 
-```
-  funcion yourInput(props) {
+```js
+  function yourInput(props) {
     const { setFilter } = props;
     return(
       <input onChange={e => setFilter(e.currentTarget.value)}>
@@ -48,8 +48,8 @@ Each component basically keeps state and exposes access to it and a modification
   }
 ```
 
-```
-  funcion yourComponent(props) {
+```js
+  function yourComponent(props) {
     const { filter, filterFunction } = props;
     const data = ['someValue', 'otherValue', 'oneLastValue'];
     return(
@@ -69,7 +69,7 @@ Each component basically keeps state and exposes access to it and a modification
 * Sorter (TBD)
 * Filter
 
-```
+```js
 export default class Filter extends React.Component {
   constructor(props) {
     super(props);
