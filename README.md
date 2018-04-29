@@ -40,12 +40,12 @@ Each component basically keeps state and exposes access to it and a modification
 ```
 
 ```js
-  function yourInput(props) {
-    const { setFilter } = props;
-    return(
-      <input onChange={e => setFilter(e.currentTarget.value)}>
-    )
-  }
+function yourInput(props) {
+  const { setFilter } = props;
+  return(
+    <input onChange={e => setFilter(e.currentTarget.value)}>
+  )
+}
 ```
 
 ```js

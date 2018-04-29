@@ -1,6 +1,6 @@
 {
   "name": "react-render-props-components",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Components for React using render props",
   "main": "build/index.js",
   "peerDependencies": {
