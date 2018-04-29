@@ -49,19 +49,16 @@ Each component basically keeps state and exposes access to it and a modification
 ```
 
 ```js
-  function yourComponent(props) {
-    const { filter, filterFunction } = props;
-    const data = ['someValue', 'otherValue', 'oneLastValue'];
-    return(
-      <div>
-        <p>Current filter is: {filter}</p>
-        <ul>
-          {filterFunction(data).map(element => (
-            <li>{element}</li>
-          ))
-      </div>
-    )
-  }
+function yourComponent(props) {
+  const { filter, filterFunction } = props;
+  const data = ['someValue', 'otherValue', 'oneLastValue'];
+  return (
+    <div>
+      <p>Current filter is: {filter}</p>
+      <ul>{filterFunction(data).map(element => <li>{element}</li>)}</ul>
+    </div>
+  );
+}
 ```
 
 ## Components details
@@ -69,7 +66,7 @@ Each component basically keeps state and exposes access to it and a modification
 * Sorter (TBD)
 * Filter
 
-```js
+```JSX
 export default class Filter extends React.Component {
   constructor(props) {
     super(props);
