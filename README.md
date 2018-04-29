@@ -19,6 +19,13 @@ NB : This is just a work in progress for now
 
 ## Usage
 
+On top of your component file :
+
+```
+const mc = require('react-render-props-components');
+const { Filter } = mc;
+```
+
 Each component basically keeps state and exposes access to it and a modification function.
 
 ```
