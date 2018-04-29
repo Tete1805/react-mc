@@ -1,8 +1,12 @@
 {
   "name": "react-render-props-components",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Components for React using render props",
   "main": "build/index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Tete1805/react-render-props-components.git"
+  },
   "peerDependencies": {
     "react": "^16.0.0"
   },
